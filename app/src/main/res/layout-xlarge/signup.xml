@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#5C5454"
+        android:padding="25dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="30sp"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+            android:drawablePadding="16dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/reg_email_edittext"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#F6F3F3"
+            android:layout_gravity="right"
+            android:id="@+id/email_warning_textview"
+            />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+                android:drawablePadding="16dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textSize="30sp"
+                android:id="@+id/reg_password_edittext"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:alpha=".5"
+                android:src="@drawable/visible_icon"
+                android:layout_marginRight="25dp"
+                android:id="@+id/show_pass_btn"
+                android:layout_marginTop="25dp"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            android:id="@+id/password_warning_edittex"
+            />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+                android:drawablePadding="16dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textSize="30sp"
+                android:id="@+id/confirm_password_edittext"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:alpha=".5"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:text="unmatch"
+                android:id="@+id/match_unmatch"
+                android:textSize="18sp"
+                />
+        </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_background"
+                android:textSize="30sp"
+                android:textColor="#fff"
+                android:layout_gravity="center_horizontal"
+                android:padding="15dp"
+                android:layout_marginRight="17dp"
+                android:id="@+id/btn_sign_up"
+                android:layout_marginTop="35dp"
+                />
+
+    </LinearLayout>
+</LinearLayout>

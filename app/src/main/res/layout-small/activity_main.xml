@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="5dp"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="#EFE9E9"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Successfully Sign In !"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:id="@+id/success"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="12sp"
+        android:padding="3dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="7dp"
+        android:id="@+id/login_email_edittext"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="6sp"
+        android:textColor="#FA0707"
+        android:layout_gravity="right"
+        android:id="@+id/email_warning_textview"
+        />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+            android:drawablePadding="9dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="3dp"
+            android:textSize="12sp"
+            android:id="@+id/password_edittext"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:alpha=".5"
+            android:src="@drawable/visible_icon"
+            android:layout_marginRight="5dp"
+            android:id="@+id/show_pass_btn"
+            android:layout_marginTop="4dp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_background"
+        android:textSize="8sp"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="7dp"
+        android:id="@+id/btn_signin"
+        />
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_background"
+        android:textSize="8sp"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+            android:id="@+id/btn_signup"
+        />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
